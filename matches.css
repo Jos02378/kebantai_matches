@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+.active-page {
+    color: #ffc833;
+}
+
+.wrapper {
+    min-height: 150vh;
+    width: 100%;
+    background: linear-gradient(to top left, #004183, #03111f);
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15%;
+    width: 100%;
+    background: linear-gradient(to bottom right, #092949, #001427);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 10px 0px rgb(0, 0, 0);
+
+}
+
+header #logo img {
+    margin-left: 3rem;
+    width: 10rem;
+}
+
+header nav ul {
+    position: relative;
+    list-style: none;
+    margin-right: 3rem;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 2.5rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.4s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffc833;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+}
+
+.content {
+    position: relative;
+    top: 20vh;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.select-box {
+    display: flex;
+    flex-direction: column;
+    width: 22vw;
+    position: relative;
+}
+
+.select-box .options-box {
+    background: #001020;
+    color: white;
+    width: 100%;
+    max-height: 0;
+    opacity: 0;
+    transition: 0.4s;
+    overflow: hidden;
+    border-radius: 10px;
+    order: 1;
+    top: 60px;
+
+    position: absolute;
+    z-index: 100;
+}
+
+.selected {
+    background: #001020;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    order: 0;
+}
+
+.selected::after {
+    content: "";
+    background: url(./images/arrow-down.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 1rem;
+    right: 12px;
+    top: 16px;
+    filter: invert(1);
+    transition: 0.4s;
+}
+
+.select-box .options-box.active {
+    max-height: 30vh;
+    opacity: 1;
+    overflow-y: scroll;
+}
+
+.select-box .options-box.active+.selected::after {
+    transform: rotateX(180deg);
+    top: -16px;
+}
+
+.select-box .options-box::-webkit-scrollbar {
+    width: 8px;
+    background-color: #000a14;
+    border-radius: 0 10px 10px 0;
+}
+
+.select-box .options-box::-webkit-scrollbar-thumb {
+    background: #c0c0c0;
+    border-radius: 0 10px 10px 0;
+}
+
+.select-box .option,
+.selected {
+    padding: 0.7rem 1.5rem;
+    cursor: pointer;
+}
+
+.select-box .option:hover {
+    background: #414b57;
+}
+
+.select-box label {
+    cursor: pointer;
+}
+
+.select-box .option .radio {
+    display: none;
+}
+
+.date_time {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: min-content;
+}
+
+#select-box1 {
+    width: 12vw;
+    margin-right: 13px;
+}
+
+#select-box2 {
+    width: 9vw;
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+.display {
+    position: relative;
+    top: 20vh;
+    margin-right: 3rem;
+    width: 68vw;
+    color: white;
+    background-color: black;
+}
+
+#display_items {
+    position: relative;
+    top: 20px;
+    color: #c0c0c0;
+    list-style: none;
+    background: gray;
+}
+
+#display_items li :nth-child(odd) {
+    position: relative;
+    margin-right: 15px;
+    color: black;
+    list-style: none;
+}
+
+#display_items li :nth-child(even) {
+    position: relative;
+    margin-right: 15px;
+    color: black;
+    list-style: none;
+}

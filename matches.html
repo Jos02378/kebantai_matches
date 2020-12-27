@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./matches.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div id="logo">
+                <a href="#"><img src="./images/-Kebantai-.png" alt="Kebantai logo"></a>
+            </div>
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" class="active-page">POST REQUESTS</a></li>
+                    <li><a href="#">MATCHES</a></li>
+                    <li><a href="#">SCHEDULE</a></li>
+                    <li><a href="#">CHATROOM</a></li>
+                    <li><a href="#">PROFILE</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <div class="content">
+                <form class="filter">
+                    <div class="select-box">
+                        <div class="options-box" id="options_box_sport">
+                            <div class="option">
+                                <input type="radio" class="radio" name="sport" id="basketball" value="basketball">
+                                <label for="basketball">Basketball</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" class="radio" name="sport" id="soccer" value="soccer">
+                                <label for="soccer">Soccer</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" class="radio" name="sport" id="badminton" value="badminton">
+                                <label for="badminton">Badminton</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" class="radio" name="sport" id="volleyball" value="volleyball">
+                                <label for="volleyball">Volleyball</label>
+                            </div>
+                        </div>
+                        <div class="selected">
+                            Choose a sport
+                        </div>
+                    </div>
+                    <div class="date_time">
+                        <div class="select-box" id="select-box1">
+                            <div class="options-box" id="options_box_date">
+                                <div class="option" id="option_date">
+                                    <input type="radio" class="radio" name="date" id="date" value="all date">
+                                    <label for="date">All Date</label>
+                                </div>
+                            </div>
+                            <div class="selected" id="selected_date">
+                                All Date
+                            </div>
+                        </div>
+                        <div class="select-box" id="select-box2">
+                            <div class="options-box" id="time">
+                                <div class="option">
+                                    <input type="radio" class="radio" name="time" id="time" value="all time">
+                                    <label for="time">All Time</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" class="radio" name="time" id="time" value="06:00">
+                                    <label for="time">06:00</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" class="radio" name="time" id="time" value="07:00">
+                                    <label for="time">07:00</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" class="radio" name="time" id="time" value="08:00">
+                                    <label for="time">08:00</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" class="radio" name="time" id="time" value="09:00">
+                                    <label for="time">09:00</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" class="radio" name="time" id="time" value="10:00">
+                                    <label for="time">10:00</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" class="radio" name="time" id="time" value="11:00">
+                                    <label for="time">11:00</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" class="radio" name="time" id="time" value="12:00">
+                                    <label for="time">12:00</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" class="radio" name="time" id="time" value="13:00">
+                                    <label for="time">13:00</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" class="radio" name="time" id="time" value="14:00">
+                                    <label for="time">14:00</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" class="radio" name="time" id="time" value="15:00">
+                                    <label for="time">15:00</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" class="radio" name="time" id="time" value="16:00">
+                                    <label for="time">16:00</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" class="radio" name="time" id="time" value="17:00">
+                                    <label for="time">17:00</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" class="radio" name="time" id="time" value="18:00">
+                                    <label for="time">18:00</label>
+                                </div>
+                            </div>
+                            <div class="selected" id="selected_time">
+                                All Time
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="select-box">
+                        <div class="options-box">
+                            <div class="option">
+                                <input type="radio" class="radio" name="Region" id="Region" value="Bandung">
+                                <label for="Region">Bandung</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" class="radio" name="Region" id="Region" value="Jakarta">
+                                <label for="Region">Jakarta</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" class="radio" name="Region" id="Region" value="Tangerang">
+                                <label for="Region">Tangerang</label>
+                            </div>
+                        </div>
+                        <div class="selected">
+                            Choose a Region
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="display">
+                <ol id="display_items">
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-firestore.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyCVQiH2DSjYOiRrsmgaSRTObEWkGpHm1sA",
+            authDomain: "kebantai2020.firebaseapp.com",
+            databaseURL: "https://kebantai2020-default-rtdb.firebaseio.com",
+            projectId: "kebantai2020",
+            storageBucket: "kebantai2020.appspot.com",
+            messagingSenderId: "290266641346",
+            appId: "1:290266641346:web:85b99043fe87f7795a1c5b",
+            measurementId: "G-M3H7QJBJGQ"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+
+        //Initialize Firestore
+        const db = firebase.firestore();
+        db.settings({
+            timestampsInSnapshots: true
+        });
+    </script>
+
+    <script src="matches.js"></script>
+</body>
+
+</html>
